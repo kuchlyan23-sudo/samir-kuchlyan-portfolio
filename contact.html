@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Samir Kuchlyan</title>
+  <meta name="description" content="Contact Samir Kuchlyan for engineering internships, technical collaborations, and inquiries.">
+  <meta name="author" content="Samir Kuchlyan">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner" class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html" aria-label="Samir Kuchlyan Portfolio Homepage">Samir Kuchlyan</a>
+      </div>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" aria-current="page" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="container form-wrapper" aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Get in Touch</h1>
+      <p class="section-desc">Reach out for internship opportunities, technical discussions, or collaboration inquiries.</p>
+
+      <form action="#" method="POST" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="fullname">Full Name <span class="required" aria-hidden="true">*</span></label>
+          <input 
+            type="text" 
+            id="fullname" 
+            name="fullname" 
+            required 
+            aria-required="true"
+            aria-describedby="name-desc"
+            autocomplete="name"
+          >
+          <small id="name-desc" class="field-help">Please enter your complete name.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            aria-required="true"
+            aria-describedby="email-desc"
+            autocomplete="email"
+          >
+          <small id="email-desc" class="field-help">Your valid email address for follow-up.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Inquiry Subject <span class="required" aria-hidden="true">*</span></label>
+          <select id="subject" name="subject" required aria-required="true">
+            <option value="" disabled selected>Select an option</option>
+            <option value="internship">Internship Opportunity</option>
+            <option value="engineering">Electronics / Software Project</option>
+            <option value="general">General Inquiries</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="5" 
+            required 
+            aria-required="true"
+            aria-describedby="message-desc"
+          ></textarea>
+          <small id="message-desc" class="field-help">Briefly outline your message or proposal.</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Samir Kuchlyan. All rights reserved.</p>
+      <p>Built with accessible HTML5 semantic architecture and WCAG compliance.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Samir Kuchlyan Portfolio</title>
+  <meta name="description" content="Engineering, protocol simulation, and accessible web applications developed by Samir Kuchlyan (ECE, RCCIIT).">
+  <meta name="author" content="Samir Kuchlyan">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner" class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html" aria-label="Samir Kuchlyan Portfolio Homepage">Samir Kuchlyan</a>
+      </div>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" aria-current="page" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="container" aria-labelledby="projects-title">
+      <h1 id="projects-title">Featured Engineering Projects</h1>
+      <p class="section-desc">Projects spanning accessible web platforms, data communications, and algorithmic system modeling.</p>
+
+      <div class="projects-grid">
+        <article class="project-card" aria-labelledby="proj-1-title">
+          <header class="project-header">
+            <span class="project-badge">Web Architecture</span>
+            <h2 id="proj-1-title">Accessible Semantic Portfolio System</h2>
+          </header>
+          <div class="project-content">
+            <p>A multi-page portfolio designed strictly with semantic HTML5 elements and WCAG 2.1 accessibility guidelines, providing full keyboard navigation, ARIA landmarks, and a perfect Lighthouse score.</p>
+          </div>
+          <footer class="project-footer">
+            <ul class="tech-tags" aria-label="Technologies used for Accessible Portfolio">
+              <li>HTML5 Semantic</li>
+              <li>CSS3</li>
+              <li>WCAG 2.1</li>
+              <li>ARIA</li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="project-card" aria-labelledby="proj-2-title">
+          <header class="project-header">
+            <span class="project-badge">Communication Systems</span>
+            <h2 id="proj-2-title">Digital Communication Protocol Simulator</h2>
+          </header>
+          <div class="project-content">
+            <p>Implemented and benchmarked sliding window protocols including Go-Back-N ARQ, Selective Repeat ARQ, and CRC-32 polynomial error detection over modeled noisy transmission channels.</p>
+          </div>
+          <footer class="project-footer">
+            <ul class="tech-tags" aria-label="Technologies used for Protocol Simulator">
+              <li>C++</li>
+              <li>Telecommunications</li>
+              <li>ARQ Protocols</li>
+              <li>CRC Checksum</li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="project-card" aria-labelledby="proj-3-title">
+          <header class="project-header">
+            <span class="project-badge">Software & Algorithms</span>
+            <h2 id="proj-3-title">Dynamic Memory & Recurrence Relation Solver</h2>
+          </header>
+          <div class="project-content">
+            <p>Algorithmic computational tool modeling divide-and-conquer recurrences via recursion tree and Master theorem approaches with memory-safe C++ dynamic allocations.</p>
+          </div>
+          <footer class="project-footer">
+            <ul class="tech-tags" aria-label="Technologies used for Algorithm Project">
+              <li>C++</li>
+              <li>Data Structures</li>
+              <li>Algorithm Complexity</li>
+            </ul>
+          </footer>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Samir Kuchlyan. All rights reserved.</p>
+      <p>Built with accessible HTML5 semantic architecture and WCAG compliance.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
